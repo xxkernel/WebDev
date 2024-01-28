@@ -1,0 +1,214 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.main{
+    height: 720px;
+    padding: 72px 0 112px;
+    background-color: #f0f2f5;
+}
+
+.container{
+    margin: 0 auto;
+}
+
+.main_content{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 20px 0;
+    position: relative;
+    width: 980px;
+}
+
+.main_img{
+    padding: 112px 0 16px;
+}
+
+.main_img img{
+    margin: -28px;
+}
+
+.main_text{
+    padding-bottom: 20px;
+    padding-right: 32px;
+}
+
+.main_text_h2{
+    font-size: 28px;
+    font-weight: normal;
+    line-height: 32px;
+    width: 500px;
+}
+
+.main_register_upper{
+    margin-top: 40px;
+    padding: 10px 0 24px;
+    text-align: center;
+    background-color: #fff;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+    width: 396px;
+}
+
+.main_register_lower{
+    margin-top: 28px;
+    font-size: 14px;
+    font-weight: 400;
+    width: 396px;
+    text-align: center;
+}
+
+.main_register_lower a{
+    font-weight: 600;
+    font-size: 14px;
+    color: #000;
+    text-decoration: none;
+}
+
+.log_pass{
+    height: 131.28px;
+}
+
+.log, .pass{
+    margin: 0 auto;
+    font-size: 17px;
+    width: 364px;
+    padding: 6px 0;
+}
+
+.log input, .pass input{
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+    font-size: 17px;
+    padding: 14px 16px;
+    width: 364px;
+    height: 51.6px;
+}
+
+.log input:focus, .pass input:focus{
+    outline: 1px solid #1877f2;
+    caret-color: #1877f2;
+}
+
+.log input:focus::placeholder, .pass input:focus::placeholder{
+    color: #a19696;
+}
+
+.vxod{
+    padding-top: 6px;
+}
+
+.btn_vxod{
+    background-color: #1877f2;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    line-height: 48px;
+    padding: 0 16px;
+    width: 364px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.forget{
+    margin-top: 16px;
+}
+
+.forget a{
+    color: #1877f2;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.line{
+    align-items: center;
+    border-top: 1px solid #dadde1;
+    margin: 20px 16px;
+    text-align: center;
+}
+
+.create_btn{
+    padding-top: 6px;
+}
+
+.create_btn_tap{
+    background-color: #42b72a;
+    border: none;
+    border-radius: 6px;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 17px;
+    height: 48px;
+    padding: 0 16px;
+    color: #fff;
+}
+
+.container_f{
+    padding-top: 20px;
+    color: #737373;
+    margin: 0 auto;
+    width: 980px;
+}
+
+.first_line ul, .second_line ul{
+    font-size: 12px;
+    padding-top: 8px;
+    list-style-type: none;
+}
+
+.second_line ul{
+    padding-top: 0;
+}
+
+.first_line ul li, .second_line ul li{
+    display: inline;
+    padding-left: 7px;
+}
+
+.first_line ul li:nth-of-type(1){
+    padding-left: 0;
+}
+
+.second_line ul li:nth-of-type(1), .second_line ul li:nth-of-type(13), .second_line ul li:nth-of-type(20),.second_line ul li:nth-of-type(28){
+    padding-left: 0;
+}
+
+.second_line ul li{
+    padding-left: 17px;
+    line-height: 19.2px;
+}
+
+.first_line ul li a, .second_line ul li a{
+    text-decoration: none;
+    color: #737373;
+}
+
+.first_line ul li a:hover, .second_line ul li a:hover{
+    text-decoration: underline;
+}
+
+.empty_line{
+    border-bottom: 1px solid #dddfe2;
+    font-size: 1px;
+    height: 13px;
+    margin-bottom: 8px;
+}
+button{
+    cursor: pointer;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+.last_elem{
+    margin: 20px 0;
+    font-size: 11px;
+}
