@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "icon": "sport",
+    "name": "Отжимания",
+    "target": 10,
+    "days": [
+      { "comment": "Первый подход всегда даётся тяжело" },
+      { "comment": "Второй день уже проще" }
+    ],
+    "isFinished": false
+  },
+  {
+    "id": 2,
+    "icon": "food",
+    "name": "Правильное питание",
+    "target": 10,
+    "days": [{ "comment": "Круто!" }],
+    "isFinished": false
+  },
+  {
+    "id": 3,
+    "icon": "sport",
+    "name": "Чтение",
+    "target": 3,
+    "days": [{ "comment": "Люблю читать" }],
+    "isFinished": false
+  }
+]
