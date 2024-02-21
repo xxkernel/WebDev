@@ -59,10 +59,11 @@ function validateAndGetFormData(form, fields) {
     if (!fieldValue) {
       form[field].classList.add('error');
     }
-    res[field] = fieldValue;
+    res[field] = fieldValue.trim();
   }
   let isValid = true;
   for (const field of fields) {
+    console.log(res[field]);
     if (!res[field]) {
       isValid = false;
     }
