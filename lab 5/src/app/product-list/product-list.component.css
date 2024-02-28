@@ -6,13 +6,13 @@
 
 .product-card {
   border: 1px solid #ccc;
-  border-radius: 20px;
+  border-radius: 8px;
   padding: 16px;
   margin: 16px 8px;
   width: calc(33.33% - 20px);
   box-sizing: border-box;
   text-align: center;
-  box-shadow: 15px 11px 8px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .product-card img {
@@ -102,10 +102,6 @@ span {
   justify-content: space-between;
 }
 
-.btn__shares {
-  display: flex;
-  justify-content: center;
-}
 .search-bar {
   margin-top: 20px;
   display: flex;
@@ -120,4 +116,13 @@ span {
   font-size: 15px;
   margin-right: 1rem;
   margin-top: 0.5rem;
+}
+
+.deletebtn {
+  background-color: red !important;
+}
+
+.likebtn {
+  margin-top: 1rem;
+  background-color: green !important;
 }

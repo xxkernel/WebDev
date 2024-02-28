@@ -1,5 +1,5 @@
 <div class="search-bar">
-  <label for="search">Search by Product Name:</label>
+  <label for="search">Search :</label>
   <input
     type="text"
     id="search"
@@ -12,7 +12,10 @@
     *ngFor="let product of filteredProducts"
     class="product-card"
   >
-    <div *ngFor="let image of product.img; let i = index">
+    <div
+      class="cards_image"
+      *ngFor="let image of product.img; let i = index"
+    >
       <img
         [src]="image"
         [alt]="product.name"
