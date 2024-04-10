@@ -1,10 +1,17 @@
 <div class="search-bar">
   <label for="search">Search by Product Name:</label>
-  <input type="text" id="search" [(ngModel)]="searchInput" />
+  <input
+    type="text"
+    id="search"
+    [(ngModel)]="searchInput"
+  />
 </div>
 <app-view-categories></app-view-categories>
 <div class="product-container">
-  <div *ngFor="let product of filteredProducts" class="product-card">
+  <div
+    *ngFor="let product of filteredProducts"
+    class="product-card"
+  >
     <div *ngFor="let image of product.img; let i = index">
       <img
         [src]="image"
@@ -13,7 +20,11 @@
       />
     </div>
     <div class="button-row">
-      <button type="button" class="image-buttons" (click)="prevImage(product)">
+      <button
+        type="button"
+        class="image-buttons"
+        (click)="prevImage(product)"
+      >
         <svg
           width="24"
           height="24"
@@ -26,7 +37,11 @@
           />
         </svg>
       </button>
-      <button type="button" class="image-buttons" (click)="nextImage(product)">
+      <button
+        type="button"
+        class="image-buttons"
+        (click)="nextImage(product)"
+      >
         <svg
           width="24"
           height="24"
@@ -51,7 +66,10 @@
     <p *ngIf="product.description">
       <span>Description: </span>{{ product.description }}
     </p>
-    <p *ngIf="product.price" class="price">
+    <p
+      *ngIf="product.price"
+      class="price"
+    >
       <span>{{ product.price }} </span> ₸
     </p>
 
@@ -61,19 +79,36 @@
       [readonly]="true"
     ></ngb-rating>
     <div class="button-container button-row">
-      <button type="button" (click)="share(product.name, product.link)">
+      <button
+        type="button"
+        (click)="share(product.name, product.link)"
+      >
         Share with WhatsApp
       </button>
-      <button type="button" (click)="sharetg(product.name, product.link)">
+      <button
+        type="button"
+        (click)="sharetg(product.name, product.link)"
+      >
         Share with Telegram
       </button>
-      <app-product-alerts [product]="product" (notify)="onNotify()">
-      </app-product-alerts>
+      <!-- <app-product-alerts
+        [product]="product"
+        (notify)="onNotify()"
+      >
+      </app-product-alerts> -->
     </div>
-    <button class="likebtn" type="button" (click)="like(product)">
-      I like this!: {{ product.likes }}
+    <button
+      class="likebtn"
+      type="button"
+      (click)="like(product)"
+    >
+      Like: {{ product.likes }}
     </button>
-    <button type="button" class="deletebtn" (click)="delete(product)">
+    <button
+      type="button"
+      class="deletebtn"
+      (click)="delete(product)"
+    >
       Delete
     </button>
   </div>

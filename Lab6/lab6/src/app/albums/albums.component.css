@@ -1,3 +1,15 @@
+.albums__main {
+  font-size: 27px;
+  margin-top: 30px;
+}
+.albums__main a {
+  color: brown;
+  font-size: 50px;
+  font-weight: 900;
+}
+a {
+  text-decoration: none;
+}
 .albums-container {
   margin-top: 1rem;
   width: 100%;
@@ -12,8 +24,10 @@
   justify-content: center;
   align-items: center;
   background-color: #d9d9d9;
-  padding:1rem;
+  padding: 1rem;
   border-radius: 20px;
+  color: brown;
+  font-size: 23px;
 }
 
 .albumid {
@@ -21,8 +35,10 @@
 }
 
 .deletebtn {
-  background-color: red;
+  background-color: #c70000;
+  color: #fff;
   height: 50px;
   width: 100px;
   border-radius: 20px;
+  font-size: 18px;
 }

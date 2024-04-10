@@ -4,5 +4,18 @@
   <h3>{{ product.name }}</h3>
   <h4>₸{{ product.price }}</h4>
   <p>{{ product.description }}</p>
-  <button type="button" (click)="addToCart(product)">Buy</button>
+  <a
+    [title]="product.name + ' details'"
+    [href]="product.link"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Kaspi
+  </a>
+  <button
+    type="button"
+    (click)="addToCart(product)"
+  >
+    Buy
+  </button>
 </div>

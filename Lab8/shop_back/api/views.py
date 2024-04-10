@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from django.http.response import JsonResponse
 from .models import Product, Category
 
@@ -22,8 +22,8 @@ def one_category(request, id):
     category = Category.objects.get(id=id)
     return JsonResponse(category.to_json())
 
-def products_by_category(request, id):
-    category = Category.objects.get(id=id)
-    products = Product.objects.filter(category=category.name)
-    products_by_category_json = [p.to_json() for p in products]
-    return JsonResponse(products_by_category_json, safe = False)
+def products_by_category(request, category_id):
+    category = get_object_or_404(Category,id=category_id)
+    products = category.product_set.all()
+    data = {'products': list(products.values())}
+    return JsonResponse(data)
